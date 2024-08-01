@@ -58,10 +58,10 @@
         confirmButtonText: "Submit"
       });
 
-      if (pesan.toLowerCase() === 'yes') {
+      if (pesan.toLowerCase() === 'yes' || pesan.toLowerCase() === 'ha' || pesan.toLowerCase() === 'haan' || pesan.toLowerCase() === 'ok') {
         await swalo.fire("Thank you for being the most valuable person in my life💕 Now text me, I'm waiting for your text🥹");
         location.assign("https://api.whatsapp.com/send?phone=" + noWhatsapp + "&text=" + pesan);
-      } else if (pesan.toLowerCase() === 'no') {
+      } else if (pesan.toLowerCase() === 'no' || pesan.toLowerCase() === 'nhi' || pesan.toLowerCase() === 'nope' || pesan.toLowerCase() === 'nahi' || pesan.toLowerCase() === 'na') {
         await swalo.fire({
           confirmButtonText: "Okay",
           title: "That's unfortunate, but thank you for your honesty."
